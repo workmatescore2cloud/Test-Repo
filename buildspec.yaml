@@ -10,6 +10,9 @@ phases:
   build:
     commands:
       - printenv   
+      - bash script.sh
+      - echo $CODEBUILD_GIT_BRANCH
+      - ls -al
   post_build:
     commands:
        - echo 'Post Build'
