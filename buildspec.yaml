@@ -13,6 +13,7 @@ phases:
       - bash script.sh
       - echo $CODEBUILD_GIT_BRANCH
       - ls -al
+      - echo "Build finished"
   post_build:
     commands:
        - echo 'Post Build'
